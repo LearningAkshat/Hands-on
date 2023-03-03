@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body,html{
+height:100%;
+}
+.parallax {
+  /* The image used */
+  background-image: url("Chocolate1.png");
+
+  /* Set a specific height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+  
+  
+  
+  
+  .main-content {
+  overflow:hidden;
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    
+    height: 100vh;
+    
+    background: linear-gradient(to right, rgba(36,31,31,1) 0%, rgba(36,31,31,1) 32%, rgba(74,71,70,1) 100%);
+    color: #fff;
+    text-align: center;
+}
+
+.vignette{
+  position:absolute;
+  width:100%; height:100%;
+  box-shadow:inset 0px 0px 150px 20px black;
+  mix-blend-mode: multiply;
+  -webkit-animation: vignette-anim 3s infinite; /* Safari 4+ */
+  -moz-animation:    vignette-anim 3s infinite; /* Fx 5+ */
+  -o-animation:      vignette-anim 3s infinite; /* Opera 12+ */
+  animation:         vignette-anim 3s infinite; /* IE 10+, Fx 29+ */
+}
+
+.noise {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    
+    pointer-events: none;
+    opacity: .15;
+}
+
+.line{
+  position:absolute;
+  height:100%; width:1px;
+  opacity:0.1;
+  background-color:#000;
+}
+
+.titleCont{position:relative;}
+
+.main-title {
+    padding: .3em 1em .25em;    
+    font-weight: 400;
+    font-size: 40px;
+    color: white;
+    font-family: 'Bellefair', serif;
+    position:relative;
+    line-height:1.3;
+    white-spacing:
+}
+
+.overTitle{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.dot{
+  width:3px;
+  height:2px;
+  background-color:white;
+  position:absolute;
+  opacity:0.3;
+}
+
+
+@-webkit-keyframes vignette-anim {
+  0%   , 100%{ opacity: 1; }
+  50% { opacity: 0.7; }
+}
+@-moz-keyframes vignette-anim {
+  0%   , 100%{ opacity: 1; }
+  50% { opacity: 0.7; }
+}
+@-o-keyframes vignette-anim {
+  0%   , 100%{ opacity: 1; }
+  50% { opacity: 0.7; }
+}
+@keyframes vignette-anim {
+  0%   , 100%{ opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  
+  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  </style>
+</head>
+<body>
+
+<div class="parallax" style="height:3000px">
+<p width="1000px" height="1000px" ><font face = "Comic sans MS" size ="10" color="#F0FFF0">Codemonkers on Chocolate Puzzle in brief
+</font><br />
+</p>
+<br/><br/><br/><br/>
+
+<p width="1000px" height="1000px" ><font face = "Comic sans MS" size ="5" color="#F5F5DC">AIM : To find which chocolate is better
+</font><br />
+</p>
+<br/><br/><br/><br/>
+
+<p width="1000px" height="1000px" ><font face = "Comic sans MS" size ="5" color="#E0FFFF">Solution : We can create an artificially intelligent model which can take decisions based on data using a regression technique
+</font><br />
+</p>
+<br/><br/><br/><br/>
+
+<p width="1000px" height="1000px" ><font face = "Comic sans MS" size ="5" color="#FFE4C4">DATA CLEANSING AND FEATURE ENGINEERING
+</font><br />
+</p>
+<br/><br/>
+
+<img src="data cleansing.png" alt="alternatetext" width="500" height="200" align="MIDDLE";>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+<p width="1000px" height="1000px" ><font face = "Comic sans MS" size ="5" color="#FFD700">TECHNIQUE USED: DECISION TREE
+</font><br />
+</p>
+
+<p width="1000px" height="1000px" ><font face = "Comic sans MS" size ="5" color="#FFFAFA">Decision tree is a supervised learning model which is used when we have to create stages. At every stage the dataset is being split according to the feature selection.
+</font><br />
+</p>
+<br/><br/>
+
+<img src="Decision Tree.png" alt="alternatetext" width="350" height="200" align="MIDDLE";>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+<p width="1000px" height="1000px" ><font face = "Comic sans MS" size ="5" color="#FFC0CB">Accuracy achieved using r2Score method is 100%
+</font><br />
+</p>
+<br/><br/>
+
+<img src="Output.png" alt="alternatetext" width="700" height="200" align="MIDDLE";>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+<p width="1000px" height="1000px" ><font face = "Comic sans MS" size ="5" color="#DCDCDC">Training Set: 80% of dataset     Test Set: 20% of dataset
+
+</font><br />
+</p>
+<br/><br/>
+
+<img src="graph.png" alt="alternatetext" width="700" height="500" class="center" style="width:50%">
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+</div>
+</body>
+</html>
